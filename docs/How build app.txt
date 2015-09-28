@@ -1,0 +1,14 @@
+Generate/update POT (when source have been updated)
+  Linux: inside src folder, run:
+    $ python /usr/share/doc/python3.4/examples/i18n/pygettext.py -d slviewer $(tree -if --noreport | grep py$)
+
+Compile translated .po files into .mo files:
+  Linux: inside project's root folder, run:
+    $ find . -name \*.po -execdir sh -c 'msgfmt "$0" -o `basename $0 .po`.mo' '{}' \;
+
+How-to update messages.po with new string keys:
+    $ echo '' > messages.po # xgettext needs that file, and we need it empty
+    $ find . -type f -iname "*.py" | xgettext -j -f -
+    $ msgmerge -N existing.po messages.po > new.po
+    $ mv new.po existing.po
+    $ rm messages.po

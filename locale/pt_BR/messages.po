@@ -1,0 +1,417 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# thalesvb <thalesvb@live.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-27 13:26-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: Main.py:31
+msgid "SAPLink file viewer"
+msgstr ""
+
+#: screen/template/SapGuiFrame.py:28
+msgid "Enter"
+msgstr "Continuar"
+
+#: screen/template/SapGuiFrame.py:35
+msgid "Save"
+msgstr "Gravar"
+
+#: screen/template/SapGuiFrame.py:40 screen/functions/FunctionForm.py:60
+msgid "Back"
+msgstr "Voltar"
+
+#: screen/template/SapGuiFrame.py:45
+msgid "Exit"
+msgstr "Encerrar"
+
+#: screen/template/SapGuiFrame.py:49
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: screen/template/SapGuiFrame.py:54
+msgid "Print"
+msgstr "Imprimir"
+
+#: screen/template/SapGuiFrame.py:58
+msgid "Find"
+msgstr "Procurar"
+
+#: screen/template/SapGuiFrame.py:62
+msgid "Find next"
+msgstr "Continuar procurando"
+
+#: screen/functions/FunctionForm.py:16
+msgid "Function module"
+msgstr "Módulo de função"
+
+#: screen/functions/FunctionForm.py:21 screen/classes/ClassForm.py:22
+msgid "Properties"
+msgstr "Características"
+
+#: screen/functions/FunctionForm.py:23
+msgid "Import"
+msgstr "Importação"
+
+#: screen/functions/FunctionForm.py:25
+msgid "Export"
+msgstr "Exportação"
+
+#: screen/functions/FunctionForm.py:27
+msgid "Changing"
+msgstr "Modificação"
+
+#: screen/functions/FunctionForm.py:29
+msgid "Tables"
+msgstr "Tabelas"
+
+#: screen/functions/FunctionForm.py:31
+msgid "Exceptions"
+msgstr "Exceções"
+
+#: screen/functions/FunctionForm.py:33
+msgid "Source code"
+msgstr "Texto fonte"
+
+#: screen/functions/FunctionForm.py:52
+msgid "Global data"
+msgstr "Dados globais"
+
+#: screen/functions/FunctionForm.py:52
+msgid "Go to global data"
+msgstr "Ir para dados globais"
+
+#: screen/functions/FunctionForm.py:54
+msgid "Main program"
+msgstr "Programa básico"
+
+#: screen/functions/FunctionForm.py:54
+msgid "Go to main program"
+msgstr "Ir para programa básico"
+
+#: screen/functions/FunctionForm.py:56
+msgid "Object Directory Entry"
+msgstr "Entrada do catálogo de objetos"
+
+#: screen/functions/FunctionForm.py:58
+msgid "Documentation"
+msgstr "Documentação"
+
+#: screen/functions/FunctionForm.py:62
+msgid "Goto"
+msgstr "Ir para"
+
+#: screen/functions/FunctionForm.py:66
+msgid "Display object list"
+msgstr "Exibir lista de objetos"
+
+#: screen/functions/FunctionForm.py:68
+msgid "Where-Used list"
+msgstr "Lista de utilizações"
+
+#: screen/functions/FunctionForm.py:73
+msgid "Splitscreen Editor"
+msgstr "Editor de tela dividida"
+
+#: screen/functions/FunctionForm.py:75
+msgid "Download"
+msgstr "Download"
+
+#: screen/functions/FunctionForm.py:77
+msgid "More utilities"
+msgstr "Outros utilitários"
+
+#: screen/functions/FunctionForm.py:79
+msgid "Utilities"
+msgstr "Utilitários"
+
+#: screen/functions/FunctionForm.py:88
+msgid "Function Group"
+msgstr "Grupo de funções"
+
+#: screen/functions/FunctionForm.py:91 screen/functions/FunctionForm.py:169
+#: screen/functions/FunctionForm.py:195 screen/functions/FunctionForm.py:223
+#: screen/functions/FunctionForm.py:249 screen/functions/FunctionForm.py:272
+msgid "Short text"
+msgstr "Texto breve"
+
+#: screen/functions/FunctionForm.py:95
+msgid "Normal function module"
+msgstr "Módulo de função normal"
+
+#: screen/functions/FunctionForm.py:95
+msgid "Remote-Enabled module"
+msgstr "Módulo de acesso remoto"
+
+#: screen/functions/FunctionForm.py:95
+msgid "Update module"
+msgstr "Módulo de atualização"
+
+#: screen/functions/FunctionForm.py:96
+msgid "Start immediately"
+msgstr "Início imediato"
+
+#: screen/functions/FunctionForm.py:96
+msgid "Immediate start, no restart"
+msgstr "Início imediato, sem atualização posterior"
+
+#: screen/functions/FunctionForm.py:96
+msgid "Start delayed"
+msgstr "Início retardado"
+
+#: screen/functions/FunctionForm.py:96
+msgid "Coll.run"
+msgstr "ExecColet."
+
+#: screen/functions/FunctionForm.py:97
+msgid "basXML supported"
+msgstr "basXML suportado"
+
+#: screen/functions/FunctionForm.py:100
+msgid "Person responsible"
+msgstr "Responsável"
+
+#: screen/functions/FunctionForm.py:102
+msgid "Last changed by"
+msgstr "Último modificador"
+
+#: screen/functions/FunctionForm.py:104
+msgid "Changed on"
+msgstr "Data de modificação"
+
+#: screen/functions/FunctionForm.py:106 screen/classes/ClassForm.py:54
+msgid "Package"
+msgstr "Pacote"
+
+#: screen/functions/FunctionForm.py:108
+msgid "Program name"
+msgstr "Nome do programa"
+
+#: screen/functions/FunctionForm.py:110
+msgid "Include name"
+msgstr "Nome do include"
+
+#: screen/functions/FunctionForm.py:112 screen/classes/ClassForm.py:59
+msgid "Original language"
+msgstr "Idioma original"
+
+#: screen/functions/FunctionForm.py:114
+msgid "Not released"
+msgstr "Não liberado"
+
+#: screen/functions/FunctionForm.py:115
+msgid "Edit lock"
+msgstr "Bloqueio processo"
+
+#: screen/functions/FunctionForm.py:116
+msgid "Global"
+msgstr "Global"
+
+#: screen/functions/FunctionForm.py:163 screen/functions/FunctionForm.py:191
+#: screen/functions/FunctionForm.py:217 screen/functions/FunctionForm.py:245
+msgid "Parameter name"
+msgstr "Nome parâmetro"
+
+#: screen/functions/FunctionForm.py:164 screen/functions/FunctionForm.py:192
+#: screen/functions/FunctionForm.py:218 screen/functions/FunctionForm.py:246
+#: screen/classes/ClassForm.py:121 screen/classes/ClassForm.py:202
+msgid "Typing"
+msgstr "Atribuição tipo"
+
+#: screen/functions/FunctionForm.py:165 screen/functions/FunctionForm.py:193
+#: screen/functions/FunctionForm.py:219 screen/functions/FunctionForm.py:247
+#: screen/classes/ClassForm.py:122 screen/classes/ClassForm.py:203
+#: screen/classes/ClassForm.py:289
+msgid "Associated type"
+msgstr "Tipo referência"
+
+#: screen/functions/FunctionForm.py:166 screen/functions/FunctionForm.py:220
+msgid "Default value"
+msgstr "Valor proposto"
+
+#: screen/functions/FunctionForm.py:167 screen/functions/FunctionForm.py:221
+#: screen/functions/FunctionForm.py:248
+msgid "Optional"
+msgstr "Opcional"
+
+#: screen/functions/FunctionForm.py:168 screen/functions/FunctionForm.py:194
+#: screen/functions/FunctionForm.py:222
+msgid "Pass value"
+msgstr "Transferir valor"
+
+#: screen/functions/FunctionForm.py:170 screen/functions/FunctionForm.py:196
+#: screen/functions/FunctionForm.py:224 screen/functions/FunctionForm.py:250
+#: screen/functions/FunctionForm.py:273
+msgid "Long text"
+msgstr "Texto descritivo"
+
+#: screen/functions/FunctionForm.py:271
+msgid "Exception"
+msgstr "Exceção"
+
+#: screen/programs/ProgramForm.py:20
+msgid "Report"
+msgstr "Programa"
+
+#: screen/easy_access/EasyAccessForm.py:20
+msgid "Opened files"
+msgstr "Arquivos abertos"
+
+#: screen/easy_access/EasyAccessForm.py:37
+#: screen/easy_access/EasyAccessForm.py:99
+msgid "Open file..."
+msgstr "Abrir arquivo..."
+
+#: screen/easy_access/EasyAccessForm.py:38
+msgid "Open SapLink file"
+msgstr "Abrir arquivo SapLink"
+
+#: screen/easy_access/EasyAccessForm.py:40
+msgid "File"
+msgstr "Arquivo"
+
+#: screen/easy_access/EasyAccessForm.py:61
+msgid "Classes"
+msgstr "Classes"
+
+#: screen/easy_access/EasyAccessForm.py:69
+msgid "Function Groups"
+msgstr "Grupos de funções"
+
+#: screen/easy_access/EasyAccessForm.py:80
+msgid "Reports"
+msgstr "Programas"
+
+#: screen/easy_access/EasyAccessForm.py:87
+msgid "Message classes"
+msgstr "Classes de mensagem"
+
+#: screen/easy_access/EasyAccessForm.py:96
+msgid "SapLink files"
+msgstr "Arquivos SapLink"
+
+#: screen/classes/ClassForm.py:17
+msgid "Interface / Class"
+msgstr "Interface / Classe"
+
+#: screen/classes/ClassForm.py:24
+msgid "Interfaces"
+msgstr "Interfaces"
+
+#: screen/classes/ClassForm.py:26
+msgid "Attributes"
+msgstr "Atributos"
+
+#: screen/classes/ClassForm.py:28
+msgid "Methods"
+msgstr "Métodos"
+
+#: screen/classes/ClassForm.py:30
+msgid "Events"
+msgstr "Eventos"
+
+#: screen/classes/ClassForm.py:32
+msgid "Types"
+msgstr "Tipos"
+
+#: screen/classes/ClassForm.py:34
+msgid "Aliases"
+msgstr "Aliases"
+
+#: screen/classes/ClassForm.py:50 screen/classes/ClassForm.py:99
+#: screen/classes/ClassForm.py:124 screen/classes/ClassForm.py:147
+#: screen/classes/ClassForm.py:183 screen/classes/ClassForm.py:205
+msgid "Description"
+msgstr "Descrição"
+
+#: screen/classes/ClassForm.py:62
+msgid "Created"
+msgstr "Criado por"
+
+#: screen/classes/ClassForm.py:66
+msgid "Last change"
+msgstr "Último modificador"
+
+#: screen/classes/ClassForm.py:97
+msgid "Interface"
+msgstr "Interface"
+
+#: screen/classes/ClassForm.py:98
+msgid "Modeled only"
+msgstr "Só modelado"
+
+#: screen/classes/ClassForm.py:117
+msgid "Attribute"
+msgstr "Atributo"
+
+#: screen/classes/ClassForm.py:118 screen/classes/ClassForm.py:144
+msgid "Level"
+msgstr "Tipo"
+
+#: screen/classes/ClassForm.py:119 screen/classes/ClassForm.py:145
+msgid "Visibility"
+msgstr "Visibilidade"
+
+#: screen/classes/ClassForm.py:120
+msgid "Read-Only"
+msgstr "Só leitura"
+
+#: screen/classes/ClassForm.py:125
+msgid "Initial value"
+msgstr "Valor inicial"
+
+#: screen/classes/ClassForm.py:143
+msgid "Method"
+msgstr "Método"
+
+#: screen/classes/ClassForm.py:146
+msgid "Method type"
+msgstr "Tipo método"
+
+#: screen/classes/ClassForm.py:181
+msgid "Event"
+msgstr "Evento"
+
+#: screen/classes/ClassForm.py:182 screen/classes/ClassForm.py:201
+#: screen/classes/ClassForm.py:287
+msgid "Type"
+msgstr "Tipo"
+
+#: screen/classes/ClassForm.py:223
+msgid "Interface component"
+msgstr "Componente interface"
+
+#: screen/classes/ClassForm.py:225
+msgid "Alias"
+msgstr "Alias"
+
+#: screen/classes/ClassForm.py:288
+msgid "Parameter"
+msgstr "Nome"
+
+#: screen/message_classes/MessageClassForm.py:19
+msgid "Message class"
+msgstr "Classe de mensagem"
+
+#: screen/message_classes/MessageClassForm.py:23
+msgid "Language"
+msgstr "Idioma"
+
+#: screen/message_classes/MessageClassForm.py:24
+msgid "Message number"
+msgstr "Número da mensagem"
+
+#: screen/message_classes/MessageClassForm.py:25
+msgid "Text"
+msgstr "Texto"
