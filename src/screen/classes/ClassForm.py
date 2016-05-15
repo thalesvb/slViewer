@@ -33,6 +33,36 @@ class ShowClassForm(SapGuiForm):
         nbAliasesPage = self.NbAliasesPage(self.notebook)
         self.notebook.AddPage(nbAliasesPage, _("Aliases"))
 
+    def createMenu(self):
+        SapGuiForm.createMenu(self)
+        menuBar = wx.MenuBar()
+        
+        #Menu GoTo
+        gotoMenu = wx.Menu()
+        localImplMenuItem = gotoMenu.Append(id=wx.NewId(),
+                                            item=_("Local implementation"),
+                                            helpString=_("Local implementation"))
+        self.GetParent().Bind(wx.EVT_MENU,
+                              self.OnShowLocalImplementation,
+                              id=localImplMenuItem.GetId())
+
+        localMacrosMenuItem = gotoMenu.Append(id=wx.NewId(),
+                                              item=_("Local macros"),
+                                              helpString=_("Local macros"))
+        self.GetParent().Bind(wx.EVT_MENU,
+                              self.OnShowLocalMacros,
+                              id=localMacrosMenuItem.GetId())
+
+        localTypesMenuItem = gotoMenu.Append(id=wx.NewId(),
+                                             item=_("Local types"),
+                                             helpString=_("Local types"))
+        self.GetParent().Bind(wx.EVT_MENU,
+                              self.OnShowLocalTypes,
+                              id=localTypesMenuItem.GetId())
+        
+        menuBar.Append(gotoMenu, _("Go to"))
+        self.GetParent().SetMenuBar(menuBar)
+
     def bindEvents(self):
         pass
 
@@ -284,8 +314,35 @@ class ShowClassForm(SapGuiForm):
 
     @property
     def currentClass(self):
+        #FIXME: change to "__model" attribute name
         return self.__current_class
+    
+    def OnShowLocalImplementation(self, event):
+        (helper.HelperFunctions.
+             navigate_to_screen(ObjectName=None,
+                                ObjectTypeKey=(helper.HelperFunctions.
+                                               ClickableObject.CLASS_LOCAL_IMPLEMENTATION),
+                                Frame=self.GetParent(),
+                                ObjectOriginFile=None,
+                                AbapObject=self.__current_class.local_implementation))
 
+    def OnShowLocalMacros(self, event):
+        (helper.HelperFunctions.
+             navigate_to_screen(ObjectName=None,
+                                ObjectTypeKey=(helper.HelperFunctions.
+                                               ClickableObject.CLASS_LOCAL_MACROS),
+                                Frame=self.GetParent(),
+                                ObjectOriginFile=None,
+                                AbapObject=self.__current_class.local_macros))
+
+    def OnShowLocalTypes(self, event):
+        (helper.HelperFunctions.
+             navigate_to_screen(ObjectName=None,
+                                ObjectTypeKey=(helper.HelperFunctions.
+                                               ClickableObject.CLASS_LOCAL_TYPES),
+                                Frame=self.GetParent(),
+                                ObjectOriginFile=None,
+                                AbapObject=self.__current_class.local_types))
 
 class ShowClassMethodSourceForm(SapGuiForm):
 
@@ -318,3 +375,31 @@ class ShowClassMethodSourceForm(SapGuiForm):
             ]
             self.parametersListCtrl.AppendItem(values=itemValues)
         self.sourceTextCtrl.SetText(AbapObject.source_code.source_code)
+
+class ShowClassLocalImplementation(SapGuiForm):
+    
+    def createControls(self):
+        self.sourceTextCtrl = AbapCodeEditor(self)
+
+    def bindEvents(self):
+        pass
+
+    def doLayout(self):
+        
+        boxSizer = wx.BoxSizer(orient=wx.VERTICAL)
+
+        for control, options in \
+                [(self.sourceTextCtrl, {'proportion': 1, 'flag': wx.EXPAND})]:
+            boxSizer.Add(control, **options)
+
+        self.SetSizerAndFit(boxSizer)
+
+    def fillInitialData(self, AbapObject):
+
+        self.sourceTextCtrl.SetText(AbapObject.source_code)
+
+class ShowClassLocalMacros(ShowClassLocalImplementation):
+    pass
+
+class ShowClassLocalTypes(ShowClassLocalImplementation):
+    pass

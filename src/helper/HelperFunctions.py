@@ -5,7 +5,8 @@ Created on 17/06/2015
 '''
 from enum import Enum
 
-from screen.classes.ClassForm import ShowClassForm, ShowClassMethodSourceForm
+from screen.classes.ClassForm import ShowClassForm, ShowClassMethodSourceForm,\
+    ShowClassLocalImplementation, ShowClassLocalMacros, ShowClassLocalTypes
 from screen.functions.FunctionForm import ShowFunctionForm
 from helper.ObjectsBuffer import ObjectsBuffer, ObjectBufferType
 from builtins import RuntimeError
@@ -15,14 +16,20 @@ from screen.message_classes.MessageClassForm import ShowMessageClassForm
 
 class ClickableObject(Enum):
         CLASS = 1
-        CLASS_METHOD = 2
-        FUNCTION_GROUP = 3
-        FUNCTION = 4
-        MESSAGE_CLASS = 5
-        PROGRAM = 6
+        CLASS_LOCAL_IMPLEMENTATION = 2
+        CLASS_LOCAL_MACROS = 3
+        CLASS_LOCAL_TYPES = 4
+        CLASS_METHOD = 5
+        FUNCTION_GROUP = 6
+        FUNCTION = 7
+        MESSAGE_CLASS = 8
+        PROGRAM = 9
 
 __map_clickableObject__ = {
   ClickableObject.CLASS: [ShowClassForm, 'classes'],
+  ClickableObject.CLASS_LOCAL_IMPLEMENTATION:[ShowClassLocalImplementation, None],
+  ClickableObject.CLASS_LOCAL_MACROS: [ShowClassLocalMacros, None],
+  ClickableObject.CLASS_LOCAL_TYPES: [ShowClassLocalTypes, None],
   ClickableObject.CLASS_METHOD: [ShowClassMethodSourceForm, None],
   ClickableObject.FUNCTION: [ShowFunctionForm, 'function_modules'],
   ClickableObject.MESSAGE_CLASS: [ShowMessageClassForm, 'message_classes'],
