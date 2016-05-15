@@ -97,6 +97,7 @@ class SapGuiFrame(wx.Frame):
         self.__stackLoadedForms.append(self.__currentForm)
         self.__currentForm.Hide()
         self.__currentForm = View
+        self.__currentForm.createMenu()
         self.backButton.Enable(enable=True)
         self.Layout()
 
